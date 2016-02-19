@@ -5,7 +5,7 @@ $(document).ready(function(){
     var userName = $("#userName").val();
     $.get('https://api.github.com/users/' + userName + '/repos?&apiid=0461ef28c848aa6ce3fc1a3c693ac17b2afd708f', function(response) {
       for (var i = 0; i < response.length; i++) {
-        $('.showRepos').append("<a href=" + "'" + response[i].html_url + "'" + ">" + response[i].name + "</a>" + "<br>");
+        $('.showRepos').append("<a href=" + "'" + response[i].html_url + "'" + "target='_blank'" + ">" + response[i].name + "</a>" + "<br>");
       }
     });
   });
