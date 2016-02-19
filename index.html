@@ -1,10 +1,30 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="build/css/vendor.css">
+    <link rel="stylesheet" href="build/css/styles.css">
+    <script src="build/js/vendor.min.js"></script>
     <script src="build/js/app.js"></script>
     <title>GitHub-api</title>
   </head>
   <body>
+    <div class="container">
+      <div class="row header">
+        <div class="col-md-9 center">
+          <div class="page-header">
+            <h1>Github Finder</h1>
+          </div>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-8 center">
+          <form class="form-inline" id="input-form">
+            <input class="form-control" type="text" id="userName" placeholder="Enter User Name">
+            <button class="btn form-control btn-success" type="submit" name="submit">Find!</button>
+          </form>
+        </div>
+      </div>
+      <div class="showRepos center"></div>
+    </div>
   </body>
 </html>
