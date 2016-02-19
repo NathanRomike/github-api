@@ -9,7 +9,9 @@ $(document).ready(function(){
         $('.showRepos').text("No repositories found for this user.")
       } else {
         for (var i = 0; i < response.length; i++) {
-          $('.showRepos').append("<a href=" + "'" + response[i].html_url + "'" + "target='_blank'" + ">" + response[i].name + "</a>" + "<br>");
+          $('.showRepos').append("<a href=" + "'" + response[i].html_url + "'" 
+                                            + "target='_blank'" + ">" + response[i].name 
+                                            + "</a>" + "<br>");
         }
       }
     });
