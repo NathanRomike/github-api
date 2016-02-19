@@ -88,17 +88,6 @@ gulp.task('serve', function() {
     }
   });
 
-  testSync.init({
-    port: 4000,
-    ui: {
-      port: 4001
-    },
-    server:{
-      baseDir: "./",
-      index: "./spec/spec-runner.html"
-    }
-  });
-
   gulp.watch(['js/*.js', 'spec/*'], ['jsBuild']);
   gulp.watch(['bower.json'], ['bowerBuild']);
   gulp.watch(['*.html'], ['htmlBuild']);
